@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/94912c4464.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/saimslogo2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blogs</a></li>
+                <i class="fas fa-bars mobile-menu-icon" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-times mobile-menu-close-icon" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Network and IT Systems Student</p>
+            <h1>Hi, I'm <span>Saim</span> Khan from<br>Ontario Tech University</h1>
+        </div>
+    </div>
+</div>
+<!  -----------about--------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <video  
+                controls src="Video_Saim.MOV" width="400" height="500">
+                </video>
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Self-driven individual currently enrolled in the second year Business and Information Technology program at Ontario Tech University.
+                 I help companies strategize in networking/programming projects and produce innovative ideas in a cutting-edge environment. 
+                 Through work experiences and several projects in my first year of Information Technology I have acquired great knowledge and practical hands-on skills within both IT and programming tools. 
+                 I aim to continue my learning in order to gain more skills and certification as I progress in my studies. 
+                 Currently seeking for a junior cyber security or application developer role where I can leverage my skills and knowledge to obtain valuable work experience. 
+                 My interest in programming and IT, along with my passion to help others in society enables me to be a great asset to the team at any company.</p>
+
+                 <div class="tab-titles">      
+                    <p Class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p Class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p Class="tab-links" onclick="opentab('education')">Education</p>
+                 </div>
+                 <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Programming</span><br>OOP Programming In Python</li>
+                        <li><span>Networking</span><br>Troubleshooting and Configuring Networks</li>
+                        <li><span>Virtualization</span><br>Cloud Computing</li>
+                        <li><span>Virtualization</span><br>Cloud Computing</li>
+                        <li><span>Security</span><br>Computer Security In Kali Linux</li>
+
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>TD Bank</span><br>Customer Experince Associate 2023-Present</li>
+                        <li><span>Santek Micro Solutions INC</span><br>Desktop Suppourt 2021-2022</li>
+                        <li><span>Kumon</span><br>Math & Reading Assistant 2018-2021</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>University</span><br>Ontario Tech Univesity 2022-Present</li>
+                        <li><span>High School</span><br>Sinclair Secondary School 2018-2022</li>
+                    </ul>
+                 </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- ---------projects------------------------>
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects & Labs</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>OOP-Python Word Encryption Project</h2>
+                <p>For this project, I independently developed a game that transforms regular English words into encrypted secret codes using six encryption methods which are Substitution, Playfair, Caesar, Transposition, Product, and RSA cipher</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop"></i>
+                <h2>Cisco Networking Academy Labs</h2>
+                 <p>Worked in Wire Shark, Packet Tracer and CRT Secure 9 to configure and rout computer operations. Connected to virtual machines and equipment to build networks, examine ethernet frames, building a switch and router network and troubleshoot connectivity issues within different interfaces</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Computer Security Labs</h2>
+                <p>Used Oracle VirtualBox for creating and managing virtual environments for security testing purposes. Used Kali Linux for penetration testing and network security assessments. Learned steganography, cryptography, access control C.I.A Triad and IT Security</p>
+                <a href="#">Learn more</a>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!---------------blog--------------------- --> 
+<div id="blog">
+    <div class="container">
+        <h1 class="sub-title">My COOP Blog</h1>
+        <div class="blog-school">
+            <div class="blog">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Job Opportunities & Confidence</h3>
+                    <p>Starting this fall semseter students are able to apply to coops for the upcoming winter and summer terms</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="blog">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Technical Skills</h3>
+                    <p>I highy reccomend using extra time to learn more tools and gain certification on websites like udemy</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="blog">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Interview Prep</h3>
+                    <p>You need to get comfortbale with failure. Interview prerp is a vital component to getting any coop!</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>  
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ---------contacts--------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact: saimk04@hotmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>6476138616</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100025431914884"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/saimymilly"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.linkedin.com/in/saim-khan-1aa54021a/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg">Message has been Sent</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Saim. <i class="fa-solid fa-heart"></i> 2023</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = docmument.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<!-- ---------Script for connecting form to excel spreadsheet--------- -->
+
+<!-- this script is from an external source to help me connect my contact form -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw3XXwH3bmQESeigEX2U3PrMzWLmC0st__EveT2nT4QJgR9FFVTfwILpsW8GPOVRsfM/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
+
